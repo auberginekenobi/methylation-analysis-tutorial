@@ -2,11 +2,11 @@
 data/
 
 # Mac OS
-*/.DS_Store
+.DS_Store
 
 # R
-*/.RData
-*/.Rhistory
+.RData
+.Rhistory
 
 # Python
-*/.ipynb_checkpoints/
+.ipynb_checkpoints
