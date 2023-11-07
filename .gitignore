@@ -1,0 +1,12 @@
+# Project-specific
+data/
+
+# Mac OS
+*/.DS_Store
+
+# R
+*/.RData
+*/.Rhistory
+
+# Python
+*/.ipynb_checkpoints/
