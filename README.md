@@ -2,6 +2,11 @@
 
 [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/chavez-lab/methylation-analysis-tutorial/HEAD?filepath=methylation.ipynb)
 
+## Dependencies
+- [minfi](https://bioconductor.org/packages/devel/bioc/vignettes/minfi/inst/doc/minfi.html)
+- 
+[conumee](https://bioconductor.org/packages/devel/bioc/vignettes/conumee/inst/doc/conumee.html)
+
 ## Todo
 - Import code for Exercises I, II and III
 - Deploy code, data and environment somewhere to the cloud (binder? SDSC accounts? genepattern 
