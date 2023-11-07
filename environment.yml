@@ -1,0 +1,8 @@
+name: methylation-analysis-tutorial
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - bioconductor-minfi
+  - bioconductor-conumee
