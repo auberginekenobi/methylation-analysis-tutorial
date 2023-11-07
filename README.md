@@ -3,9 +3,14 @@
 [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/chavez-lab/methylation-analysis-tutorial/HEAD?filepath=methylation.ipynb)
 
 ## Dependencies
+- [R](https://www.r-project.org/)
 - [minfi](https://bioconductor.org/packages/devel/bioc/vignettes/minfi/inst/doc/minfi.html)
-- 
-[conumee](https://bioconductor.org/packages/devel/bioc/vignettes/conumee/inst/doc/conumee.html)
+- [conumee](https://bioconductor.org/packages/devel/bioc/vignettes/conumee/inst/doc/conumee.html)
+- [jupyter lab](https://jupyter.org/try-jupyter/lab/?path=notebooks%2FIntro.ipynb)
+
+## Installation
+1. Install dependencies 
+2. Run methylation.ipynb
 
 ## Todo
 - Import code for Exercises I, II and III
