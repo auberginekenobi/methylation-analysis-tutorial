@@ -18,6 +18,7 @@
 notebook?)
 
 ## Lab notebook
+2023 course materials: https://www.dropbox.com/scl/fo/ikec8fs2xovk0onljsyd2/h?dl=0
 
 Things I have learned so far:
 - To set up your virtual environment with jupyter lab, see 
