@@ -6,3 +6,6 @@ channels:
 dependencies:
   - bioconductor-minfi
   - bioconductor-conumee
+  - bioconductor-minfidata
+  - r-rtsne
+  - bioconductor-sva

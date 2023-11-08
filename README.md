@@ -13,9 +13,8 @@
 2. Run methylation.ipynb
 
 ## Todo
-- Import code for Exercises I, II and III
 - Deploy code, data and environment somewhere to the cloud (binder? SDSC accounts? genepattern 
-notebook?)
+notebook? posit cloud?)
 
 ## Lab notebook
 2023 course materials: https://www.dropbox.com/scl/fo/ikec8fs2xovk0onljsyd2/h?dl=0
