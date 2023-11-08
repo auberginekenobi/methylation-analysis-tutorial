@@ -9,3 +9,4 @@ dependencies:
   - bioconductor-minfidata
   - r-rtsne
   - bioconductor-sva
+  - r-tictoc
