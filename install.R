@@ -1,7 +1,7 @@
-#if (!require("BiocManager", quietly = TRUE)){
-#    install.packages("BiocManager")
-#}
-#BiocManager::install("minfi")
+if (!require("BiocManager", quietly = TRUE)){
+    install.packages("BiocManager")
+}
+BiocManager::install("minfi")
 #BiocManager::install("minfiData")
 #BiocManager::install("conumee")
 #BiocManager::install("Rtsne")
