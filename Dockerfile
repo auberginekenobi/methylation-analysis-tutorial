@@ -15,7 +15,7 @@ USER root
 
 COPY install.R /tmp
 #RUN apt-get -y install htop
-RUN Rscript /tmp/install.R
+#RUN Rscript /tmp/install.R
 
 #RUN R -e "install.packages('rjson', repos='http://cran.rstudio.com/')" && \
 #    R -e "install.packages('session', repos='http://cran.rstudio.com/')" && \
