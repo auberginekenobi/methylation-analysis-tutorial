@@ -14,6 +14,24 @@ LABEL maintainer="UC San Diego ITS/ETS <ets-consult@ucsd.edu>"
 USER root
 
 COPY install.R /tmp
+
+### CONDA
+
+RUN conda install nb_conda_kernels
+ARG KERNEL=methylation-analysis-tutorial
+ENV CONDA_PREFIX=/opt/conda/envs/${KERNEL}
+
+COPY _environment.yml /tmp
+RUN conda env create --file /tmp/_environment.yml && \
+    eval "$(conda shell.bash hook)" && \
+    conda activate ${KERNEL} && \
+    mkdir -p $CONDA_PREFIX/etc/conda/activate.d && \
+    python -m ipykernel install --name=${KERNEL} && \
+    fix-permissions $CONDA_DIR && \
+    fix-permissions /home/$NB_USER
+
+
+
 #RUN apt-get -y install htop
 #RUN Rscript /tmp/install.R
 
