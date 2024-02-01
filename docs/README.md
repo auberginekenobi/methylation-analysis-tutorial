@@ -13,7 +13,7 @@
 GenePattern Notebook (GPN) is a cloud bioinformatics resource developed and maintained by the Mesirov lab at UCSD. It is designed for use by computational experts and newbies alike, and provides compute resources, a standard Linux operating system (OS), the programming languages `python` and `R`, the version control software `git`, and the interactive software development tool `jupyter notebook`. All of the steps in this walkthrough should equally work on your local Linux, Windows, or Mac OS with all of the above softwares (although we've only minimally tested this).
 - Navigate to [GenePattern Notebook](https://notebook.genepattern.org/) and create an account.
 - Create a new project "methylation-analysis-demo". This will open a new tab with the GPN user interface (UI), and would be equivalent to opening a terminal and running `jupyter notebook` on a fresh Linux box with `python`, `R`, `git`, and `jupyter` installed.
-![screenshot](gpnui_empty.png)
+![screenshot](gpnui_empty.png).
 
 ### 1.1. Install dependencies
 Most analyses use existing software written and distributed by someone else, called *packages*. Those packages in turn will require other third-party packages to run, called `dependencies`, which will in turn require more dependencies, etc. This tutorial uses the `minfi` and `conumee` packages to analyze Illumina methylation array data, but the entire *dependency tree* is about 266 different software packages, each with specific versions. We will use the `conda` *package manager*, preinstalled into your GenePattern Notebook account, to install these.
@@ -28,9 +28,9 @@ Most analyses use existing software written and distributed by someone else, cal
 \* Developer note: Dockerize this so that the environment comes pre-distributed?
 ### 1.2. Download data
 Bioinformatics frequently requires lots of data. This tutorial will use methylation array data of 1,256 medulloblastomas.
-- Download the data at [download link](https://16515-my.sharepoint.com/:u:/g/personal/laurelia_sbpdiscovery_org/EQHc9jxw5WJIvsnr46S2V_oBUagMAKQrreUZQ7jEBsvh9g?e=BlC5eS)
+- Download the data at [download link](https://16515-my.sharepoint.com/:u:/g/personal/laurelia_sbpdiscovery_org/EQHc9jxw5WJIvsnr46S2V_oBUagMAKQrreUZQ7jEBsvh9g?e=BlC5eS).
 - In the UI, navigate to the methylation-analysis-tutorial directory and upload data.zip using the `Upload` button in the top-right corner. **This will also take a long time.** Yes, we're working on a better way to do this.
-- In your Terminal tab, `cd methylation-analysis-tutorial` to navigate to the tutorial directory
+- In your Terminal tab, `cd methylation-analysis-tutorial` to navigate to the tutorial directory.
 - The data are in compressed format. Unzip it: `unzip data.zip`.
 - You don't need the .zip file anymore. Delete it with `rm data.zip`.
 - You are now done with the Terminal and can close it.
