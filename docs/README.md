@@ -13,7 +13,7 @@
 GenePattern Notebook (GPN) is a cloud bioinformatics resource developed and maintained by the Mesirov lab at UCSD. It is designed for use by computational experts and newbies alike, and provides compute resources, a standard Linux operating system (OS), the programming languages `python` and `R`, the version control software `git`, and the interactive software development tool `jupyter notebook`. All of the steps in this walkthrough should equally work on your local Linux, Windows, or Mac OS with all of the above softwares (although we've only minimally tested this).
 - Navigate to [GenePattern Notebook](https://notebook.genepattern.org/) and create an account.
 - Create a new project "methylation-analysis-demo". This will open a new tab with the GPN user interface (UI), and would be equivalent to opening a terminal and running `jupyter notebook` on a fresh Linux box with `python`, `R`, `git`, and `jupyter` installed.
-![screenshot](gpnui_empty.png).
+![screenshot](gpnui_empty.png)
 
 ### 1.1. Install dependencies
 Most analyses use existing software written and distributed by someone else, called *packages*. Those packages in turn will require other third-party packages to run, called `dependencies`, which will in turn require more dependencies, etc. This tutorial uses the `minfi` and `conumee` packages to analyze Illumina methylation array data, but the entire *dependency tree* is about 266 different software packages, each with specific versions. We will use the `conda` *package manager*, preinstalled into your GenePattern Notebook account, to install these.
