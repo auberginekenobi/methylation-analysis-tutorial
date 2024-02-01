@@ -10,3 +10,4 @@ dependencies:
   - r-rtsne
   - bioconductor-sva
   - r-tictoc
+  - r-irkernel
