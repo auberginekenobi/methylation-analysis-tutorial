@@ -13,6 +13,7 @@
 2. Run methylation.ipynb
 
 ## GenePattern Notebook Walkthrough
+GenePattern Notebook is a cloud bioinformatics resource developed and maintained by the Mesirov lab at UCSD. It is designed for use by computational experts and newbies alike, and provides compute resources, a standard Linux operating system (OS), the programming languages Python and R, and the interactive software development tool Jupyter notebook. All of the steps in this walkthrough should equally work with minimal modification on your local Linux, Windows, or Mac OS (although we haven't tested it).
 - Navigate to [GenePattern Notebook](https://notebook.genepattern.org/) and create an account.
 - Create a new project methylation-analysis-demo
 ### Install dependencies
@@ -24,7 +25,16 @@ Most analyses use existing software written and distributed by someone else, cal
 - Run `conda init; source ~/.bashrc`; the reason this is necessary is beyond scope of this tutorial. Briefly, if you don't run this, then `conda` will tell you to run this before you can run the next command.
 - Run `conda activate methylation-analysis-tutorial` to enter your new VE.
 - Run `R -e 'IRkernel::installspec(name = "methylation", displayname = "methylation")'`. This will make your environment accessible within GenePattern Notebook.
-- You are now done with the Terminal tab and can close it.
+* TODO: Dockerize this so that the environment comes pre-distributed.
+### Download data
+Bioinformatics frequently requires lots of data. This tutorial will use methylation array data of 1,256 medulloblastomas.
+- Download the data at [download link](https://16515-my.sharepoint.com/:u:/g/personal/laurelia_sbpdiscovery_org/EQHc9jxw5WJIvsnr46S2V_oBUagMAKQrreUZQ7jEBsvh9g?e=BlC5eS)
+- In the GenePattern interface, navigate to the methylation-analysis-tutorial directory and upload data.zip using the `Upload` button in the GenePattern interface. **This will also take a long time.** Yes, we're working on a better way to do this.
+- In your Terminal tab, `cd methylation-analysis-tutorial` to navigate to the tutorial directory
+- `unzip data.zip`.
+- You don't need the .zip file anymore. Delete it with `rm data.zip`.
+- You are now done with the Terminal and can close it.
+* TODO: Host this somewhere with a public download link. Could also include it in the Docker container.
 
 ## Todo
 - Deploy code, data and environment somewhere to the cloud (binder? SDSC accounts? genepattern 
