@@ -40,11 +40,6 @@ Bioinformatics frequently requires lots of data. This tutorial will use methylat
 ### 1.3 Run the analysis
 We now have a lot of data and the bioinformatics software tools to analyze it. Proceed with the tutorial by opening methylation.ipynb. 
 
-### 1.4 Footnotes
-[^1]: Footnotes indicate differences between setup on GPN vs. a local machine with Linux, git, conda etc. installed.
-[^2]: We use conda here specifically because it is preinstalled on GPN. If running locally, the `mamba` package manager is faster with equivalent syntax.
-[^3]: The `--prefix` flag is required on GPN because only the user directory is persisted between sessions. If running locally, the `--prefix` flag is not necessary.
-
 ## Lab notebook
 2023 course materials: https://www.dropbox.com/scl/fo/ikec8fs2xovk0onljsyd2/h?dl=0
 
@@ -57,4 +52,9 @@ https://stackoverflow.com/questions/71515117/how-to-set-up-a-conda-osx-64-enviro
 - Using conda to install R packages (minfi and conumee + dependencies) seems to exceed the 
 RAM limit for [mybinder.org](mybinder.org). See 
 https://discourse.jupyter.org/t/how-can-i-prevent-an-out-of-memory-error-in-github-actions/17294
+
+
+[^1]: Footnotes indicate differences between setup on GPN vs. a local machine with Linux, git, conda etc. installed.
+[^2]: We use conda here specifically because it is preinstalled on GPN. If running locally, the `mamba` package manager is faster with equivalent syntax.
+[^3]: The `--prefix` flag is required on GPN because only the user directory is persisted between sessions. If running locally, the `--prefix` flag is not necessary.
 
