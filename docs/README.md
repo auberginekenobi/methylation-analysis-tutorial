@@ -41,6 +41,7 @@ Bioinformatics frequently requires lots of data. This tutorial will use methylat
 We now have a lot of data and the bioinformatics software tools to analyze it. 
 - Open methylation-analysis-tutorial/methylation.ipynb. This is a jupyter notebook.
 - You will need to change the *kernel* to use the `methylation` kernel we just installed via conda. Using the menu at the top, select `Kernel` > `Change kernel` > `methylation`.
+- Read and run the code in each cell in descending order using `Shift + Enter`.
 
 ## Lab notebook
 2023 course materials: https://www.dropbox.com/scl/fo/ikec8fs2xovk0onljsyd2/h?dl=0
