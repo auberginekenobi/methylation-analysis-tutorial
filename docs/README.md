@@ -10,19 +10,19 @@
 
 ## 1. Walkthrough
 ### 1.0. Get started in GenePattern Notebook
-GenePattern Notebook (GPN) is a cloud bioinformatics resource developed and maintained by the Mesirov lab at UCSD. It is designed for use by computational experts and newbies alike, and provides compute resources, a standard Linux operating system (OS), the programming languages `python` and `R`, the version control software `git`, and the interactive software development tool `jupyter notebook`. All of the steps in this walkthrough should equally work on your local Linux, Windows, or Mac OS with all of the above softwares (although we've only minimally tested this) [^0].
+GenePattern Notebook (GPN) is a cloud bioinformatics resource developed and maintained by the Mesirov lab at UCSD. It is designed for use by computational experts and newbies alike, and provides compute resources, a standard Linux operating system (OS), the programming languages `python` and `R`, the version control software `git`, and the interactive software development tool `jupyter notebook`. All of the steps in this walkthrough should equally work on your local Linux, Windows, or Mac OS with all of the above softwares (although we've only minimally tested this) [^1].
 - Navigate to [GenePattern Notebook](https://notebook.genepattern.org/) and create an account.
 - Create a new project "methylation-analysis-demo". This will open a new tab with the GPN user interface (UI), and would be equivalent to opening a terminal and running `jupyter notebook` on a fresh Linux box with `python`, `R`, `git`, and `jupyter` installed.
 ![screenshot](gpnui_empty.png)
 
 ### 1.1. Install dependencies
-Most analyses use existing software written and distributed by someone else, called *packages*. Those packages in turn will require other third-party packages to run, called `dependencies`, which will in turn require more dependencies, etc. This tutorial uses the `minfi` and `conumee` packages to analyze Illumina methylation array data, but the entire *dependency tree* is about 266 different software packages, each with specific versions. We will use the `conda` *package manager*, preinstalled into your GenePattern Notebook account[^1], to install these.
+Most analyses use existing software written and distributed by someone else, called *packages*. Those packages in turn will require other third-party packages to run, called `dependencies`, which will in turn require more dependencies, etc. This tutorial uses the `minfi` and `conumee` packages to analyze Illumina methylation array data, but the entire *dependency tree* is about 266 different software packages, each with specific versions. We will use the `conda` *package manager*, preinstalled into your GenePattern Notebook account[^2], to install these.
 - In the top right hand corner of the interface, click `New` > `Terminal`. This will open a bash command line interface (CLI), which you can use to download resources and install software.
 - **Download the code.** Git is a software for maintaining and distributing other software. Run the command `git clone git@github.com:chavez-lab/methylation-analysis-tutorial.git` on the CLI to download the code for this tutorial.
 - **Set up your environment.** A *virtual environment* (VE) is an isolated set of software tools for running a particular task. We will create a virtual environment for all of the software required for methylation analysis using `conda`.
-- The softwares required for this tutorial are listed in the `_environment.yml` file of this repository. Run `conda env create --prefix=~/.conda/methylation --file=methylation-analysis-tutorial/_environment.yml`[^2] to create the VE and install all dependencies. **This will take awhile to run.**
+- The softwares required for this tutorial are listed in the `_environment.yml` file of this repository. Run `conda env create --prefix=~/.conda/methylation --file=methylation-analysis-tutorial/_environment.yml`[^3] to create the VE and install all dependencies. **This will take awhile to run.**
 - Run `conda init; source ~/.bashrc`; the reason this is necessary is beyond scope of this tutorial. Briefly, if you don't run this, then `conda` will tell you to run this before you can run the next command.
-- Run `conda activate methylation-analysis-tutorial` to enter your new VE.
+- Run `conda activate ~/.conda/methylation` to enter your new VE.
 - Run `R -e 'IRkernel::installspec(name = "methylation", displayname = "methylation")'`. This will make your environment accessible within GenePattern Notebook.
 
 \* Developer note: Dockerize this so that the environment comes pre-distributed?
@@ -41,9 +41,9 @@ Bioinformatics frequently requires lots of data. This tutorial will use methylat
 We now have a lot of data and the bioinformatics software tools to analyze it. Proceed with the tutorial by opening methylation.ipynb. 
 
 ### 1.4 Footnotes
-[^0] Footnotes indicate differences between setup on GPN vs. a local machine with Linux, git, conda etc. installed.
-[^1] We use conda here specifically because it is preinstalled on GPN. If running locally, the `mamba` package manager is faster with equivalent syntax.
-[^2] The `--prefix` flag is required on GPN because only the user directory is persisted between sessions. If running locally, the `--prefix` flag is not necessary.
+[^1] Footnotes indicate differences between setup on GPN vs. a local machine with Linux, git, conda etc. installed.
+[^2] We use conda here specifically because it is preinstalled on GPN. If running locally, the `mamba` package manager is faster with equivalent syntax.
+[^3] The `--prefix` flag is required on GPN because only the user directory is persisted between sessions. If running locally, the `--prefix` flag is not necessary.
 
 ## Lab notebook
 2023 course materials: https://www.dropbox.com/scl/fo/ikec8fs2xovk0onljsyd2/h?dl=0
