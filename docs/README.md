@@ -28,7 +28,7 @@ Most analyses use existing software written and distributed by someone else, cal
 \* Developer note: Dockerize this so that the environment comes pre-distributed?
 ### 1.2. Download data
 Bioinformatics frequently requires lots of data. This tutorial will use methylation array data of 1,256 medulloblastomas.
-- Download the data at [download link](https://16515-my.sharepoint.com/:u:/g/personal/laurelia_sbpdiscovery_org/EQHc9jxw5WJIvsnr46S2V_oBUagMAKQrreUZQ7jEBsvh9g?e=BlC5eS).
+- Download the data at [download link](https://16515-my.sharepoint.com/:u:/g/personal/laurelia_sbpdiscovery_org/ESz_vdKN4tlHuxjJysm7y4EBonw1nMSq-Ji3U10FpAGC8w?e=kP2rtz).
 - In the UI, navigate to the methylation-analysis-tutorial directory and upload data.zip using the `Upload` button in the top-right corner. **This will also take a long time.** Yes, we're working on a better way to do this.
 - In your Terminal tab, `cd methylation-analysis-tutorial` to navigate to the tutorial directory.
 - The data are in compressed format. Unzip it: `unzip data.zip`.
@@ -38,7 +38,9 @@ Bioinformatics frequently requires lots of data. This tutorial will use methylat
 \* Developer note: Host this somewhere with a public download link. Even better, put readonly copies somewhere on the GenePattern server so the user doesn't have to download at all.
 
 ### 1.3 Run the analysis
-We now have a lot of data and the bioinformatics software tools to analyze it. Proceed with the tutorial by opening methylation.ipynb. 
+We now have a lot of data and the bioinformatics software tools to analyze it. 
+- Open methylation-analysis-tutorial/methylation.ipynb. This is a jupyter notebook.
+- You will need to change the *kernel* to use the `methylation` kernel we just installed via conda. Using the menu at the top, select `Kernel` > `Change kernel` > `methylation`.
 
 ## Lab notebook
 2023 course materials: https://www.dropbox.com/scl/fo/ikec8fs2xovk0onljsyd2/h?dl=0
