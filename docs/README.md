@@ -41,9 +41,9 @@ Bioinformatics frequently requires lots of data. This tutorial will use methylat
 We now have a lot of data and the bioinformatics software tools to analyze it. Proceed with the tutorial by opening methylation.ipynb. 
 
 ### 1.4 Footnotes
-[^1] Footnotes indicate differences between setup on GPN vs. a local machine with Linux, git, conda etc. installed.
-[^2] We use conda here specifically because it is preinstalled on GPN. If running locally, the `mamba` package manager is faster with equivalent syntax.
-[^3] The `--prefix` flag is required on GPN because only the user directory is persisted between sessions. If running locally, the `--prefix` flag is not necessary.
+[^1]: Footnotes indicate differences between setup on GPN vs. a local machine with Linux, git, conda etc. installed.
+[^2]: We use conda here specifically because it is preinstalled on GPN. If running locally, the `mamba` package manager is faster with equivalent syntax.
+[^3]: The `--prefix` flag is required on GPN because only the user directory is persisted between sessions. If running locally, the `--prefix` flag is not necessary.
 
 ## Lab notebook
 2023 course materials: https://www.dropbox.com/scl/fo/ikec8fs2xovk0onljsyd2/h?dl=0
