@@ -48,7 +48,7 @@ In addition to providing compute resources in a basic Linux environment, GenePat
 - Select the 'Run' button **exactly once**. This will queue your job onto the GenePattern server, which may take around 10 minutes to complete.
 - When the job completes, the cell will update with links to output files. Review the copy number plots to answer the last homework question:
 
-**2.1: Which patient has a chromosome 16q loss?**
+**Q2.1: Which patient has a chromosome 16q loss?**
 
 ### 2.1 Submit responses
 Submit responses to questions 1.1-1.9 (see methylation.ipynb) and 2.1 to **TBD**.
