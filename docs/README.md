@@ -25,26 +25,36 @@ Most analyses use existing software written and distributed by someone else, cal
 - Run `conda activate ~/.conda/methylation` to enter your new VE.
 - Run `R -e 'IRkernel::installspec(name = "methylation", displayname = "methylation")'`. This will make your environment accessible within GenePattern Notebook.
 
-\* Developer note: Dockerize this so that the environment comes pre-distributed?
-### 1.2. Download data
-Bioinformatics frequently requires lots of data. This tutorial will use methylation array data of 1,256 medulloblastomas.
-- Download the data at [download link](https://16515-my.sharepoint.com/:u:/g/personal/laurelia_sbpdiscovery_org/ESz_vdKN4tlHuxjJysm7y4EBonw1nMSq-Ji3U10FpAGC8w?e=kP2rtz).
-- In the UI, navigate to the methylation-analysis-tutorial directory and upload data.zip using the `Upload` button in the top-right corner. **This will also take a long time.** Yes, we're working on a better way to do this.
-- In your Terminal tab, `cd methylation-analysis-tutorial` to navigate to the tutorial directory.
-- The data are in compressed format. Unzip it: `unzip data.zip`.
-- You don't need the .zip file anymore. Delete it with `rm data.zip`.
-- You are now done with the Terminal and can close it.
-
-\* Developer note: Host this somewhere with a public download link. Even better, put readonly copies somewhere on the GenePattern server so the user doesn't have to download at all.
+### 1.2. Upload data
+Bioinformatics frequently requires lots of data. This tutorial will use methylation array data of 400 medulloblastomas. GenePattern Notebooks has an 'Upload' feature to import your own files into your home directory, but to save time we have already uploaded the medulloblastoma dataset to the GP server at https://datasets.genepattern.org/?prefix=data/chapman/. This link is included in the analysis code (see 1.3) so no action is necessary for you at this time.
 
 ### 1.3 Run the analysis
 We now have a lot of data and the bioinformatics software tools to analyze it. 
-- Open methylation-analysis-tutorial/methylation.ipynb. This is a jupyter notebook.
+- Open methylation-analysis-tutorial/methylation.ipynb. This is a *jupyter notebook*.
 - You will need to change the *kernel* to use the `methylation` kernel we just installed via conda. Using the menu at the top, select `Kernel` > `Change kernel` > `methylation`.
 - Read and run the code in each cell in descending order using `Shift + Enter`.
 
+## 2. Homework
+The homework consists of two parts. Section 1 included several questions 1.1-1.9 in the `methylation.ipynb` notebook. In section 2, you will infer genome-wide copy number alterations from methylation array data using the `conumee` package.
+
+In addition to providing compute resources in a basic Linux environment, GenePattern also maintains standalone software modules to perform various common bioinformatics analyses. One such frequent use case is copy number inference from methylation array data, implemented in the MethylationCNVAnalysis module. This tutorial will use the GP Notebook at [notebook.genepattern.org](https://notebook.genepattern.org/), but may also be run using the module at [cloud.genepattern.org](https://cloud.genepattern.org/). Adventurous users will find the source code in `src/run.R` of the [MethylationCNVAnalysis](https://github.com/genepattern/MethylationCNVAnalysis/tree/f921fa141c6a3e05031b3b51f1af72a8c0774211) repo on Github.
+
+### 2.0 Run the copy number analysis
+- In the GPN Control Panel, scroll down and search 'CNV' in the search bar of the Public Library. Select the 'Methylation Array CNV Analysis' GP Notebook to open it.
+![screenshot](cnv_search.png)
+- Proceed through the cells in descending order as before. When prompted to login, do so.
+- The cell titled 'MethylationCNVAnalysis' is a special cell to run the eponymous GP module. Enter the url containing methylation data of 4 glioblastoma patients into the query field: https://datasets.genepattern.org/data/chapman/DNAm_raw_idat.zip. Use the urls in the Example (blue box) for the 'control sample data', 'genes to highlight', and 'ignore regions' fields. Set 'sex chromosomes' to 'no'.
+- This job will require more than the default resource allocation for this module. To request additional memory allocation, click the gear menu in the upper right corner of the MethylationCNVAnalysis cell and select "Advanced Options." This will make a new "Job Options" section appear at the bottom of the module. In this section set the "job memory" parameter to 16Gb. ![screenshot](advanced_options.png)
+- Select the 'Run' button **exactly once**. This will queue your job onto the GenePattern server, which may take around 10 minutes to complete.
+- When the job completes, the cell will update with links to output files. Review the copy number plots to answer the last homework question:
+
+**2.1: Which patient has a chromosome 16q loss?**
+
+### 2.1 Submit responses
+Submit responses to questions 1.1-1.9 (see methylation.ipynb) and 2.1 to **TBD**.
+
 ## Lab notebook
-2023 course materials: https://www.dropbox.com/scl/fo/ikec8fs2xovk0onljsyd2/h?dl=0
+2024 course materials: [https://www.dropbox.com/scl/fo/ikec8fs2xovk0onljsyd2/h?dl=0](https://www.dropbox.com/scl/fo/vga2lu7bj0rwcbw3dqjvs/h?rlkey=rplszwoxsj83s34270qgpwaov&dl=0)
 
 Things I have learned so far:
 - To set up your virtual environment with jupyter lab, see 
