@@ -4,11 +4,12 @@ channels:
   - bioconda
   - defaults
 dependencies:
-  - r-matrixstats=1.1.0
+  - r-matrixstats
   - bioconductor-minfi
   - bioconductor-conumee
   - bioconductor-minfidata
   - r-rtsne
   - bioconductor-sva
   - r-tictoc
+  - jupyter_client
   - r-irkernel
