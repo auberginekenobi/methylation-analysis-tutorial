@@ -35,7 +35,7 @@ We now have a lot of data and the bioinformatics software tools to analyze it.
 - Read and run the code in each cell in descending order using `Shift + Enter`.
 
 ## 2. Homework
-The homework consists of two parts. Section 1 included several questions 1.1-1.9 in the `methylation.ipynb` notebook. In section 2, you will infer genome-wide copy number alterations from methylation array data using the `conumee` package.
+The homework consists of two parts. Section 1 included several questions 1.1-1.7 in the `methylation.ipynb` notebook. In section 2, you will infer genome-wide copy number alterations from methylation array data using the `conumee` package.
 
 In addition to providing compute resources in a basic Linux environment, GenePattern also maintains standalone software modules to perform various common bioinformatics analyses. One such frequent use case is copy number inference from methylation array data, implemented in the MethylationCNVAnalysis module. This tutorial will use the GP Notebook at [notebook.genepattern.org](https://notebook.genepattern.org/), but may also be run using the module at [cloud.genepattern.org](https://cloud.genepattern.org/). Adventurous users will find the source code in `src/run.R` of the [MethylationCNVAnalysis](https://github.com/genepattern/MethylationCNVAnalysis/tree/f921fa141c6a3e05031b3b51f1af72a8c0774211) repo on Github.
 
@@ -51,10 +51,10 @@ In addition to providing compute resources in a basic Linux environment, GenePat
 **Q2.1: Which patient has a chromosome 16q loss?**
 
 ### 2.1 Submit responses
-Submit responses to questions 1.1-1.9 (see methylation.ipynb) and 2.1 to https://forms.gle/MYkwUBkB41BecDbm7.
+Submit responses to questions 1.1-1.7 (see methylation.ipynb) and 2.1 to https://forms.gle/MYkwUBkB41BecDbm7.
 
 ## Lab notebook
-2024 course materials: [https://www.dropbox.com/scl/fo/ikec8fs2xovk0onljsyd2/h?dl=0](https://www.dropbox.com/scl/fo/vga2lu7bj0rwcbw3dqjvs/h?rlkey=rplszwoxsj83s34270qgpwaov&dl=0)
+2025 course materials: [[https://www.dropbox.com/scl/fo/ikec8fs2xovk0onljsyd2/h?dl=0](https://www.dropbox.com/scl/fo/vga2lu7bj0rwcbw3dqjvs/h?rlkey=rplszwoxsj83s34270qgpwaov&dl=0)](https://www.dropbox.com/scl/fo/utsv2mexoaywrq0inrejk/AIW1VKL6vkaEI187kN8o-Ec?rlkey=wzzls7gi3w2pad083c5aps2ao&dl=0)
 
 Things I have learned so far:
 - To set up your virtual environment with jupyter lab, see 
