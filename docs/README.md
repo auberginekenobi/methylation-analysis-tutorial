@@ -51,7 +51,7 @@ In addition to providing compute resources in a basic Linux environment, GenePat
 **Q2.1: Which patient has a chromosome 16q loss?**
 
 ### 2.1 Submit responses
-Submit responses to questions 1.1-1.7 (see methylation.ipynb) and 2.1 to https://forms.gle/MYkwUBkB41BecDbm7.
+Submit responses to questions 1.1-1.7 and 2.1 (including the plot in 1.7, see methylation.ipynb) as pdfs in Canvas.
 
 ## Lab notebook
 2025 course materials: [https://www.dropbox.com/scl/fo/utsv2mexoaywrq0inrejk/AIW1VKL6vkaEI187kN8o-Ec?rlkey=wzzls7gi3w2pad083c5aps2ao&dl=0]
