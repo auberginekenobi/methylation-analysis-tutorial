@@ -20,7 +20,7 @@ Most analyses use existing software written and distributed by someone else, cal
 - In the top right hand corner of the interface, click `New` > `Terminal`. This will open a bash command line interface (CLI), which you can use to download resources and install software.
 - **Download the code.** Git is a software for maintaining and distributing other software. Run the command `git clone https://github.com/chavez-lab/methylation-analysis-tutorial.git` on the CLI to download the code for this tutorial.
 - **Set up your environment.** A *virtual environment* (VE) is an isolated set of software tools for running a particular task. We will create a virtual environment for all of the software required for methylation analysis using `conda`.
-- The softwares required for this tutorial are listed in the `_environment.yml` file of this repository. Run `conda env create --prefix=~/.conda/methylation --file=methylation-analysis-tutorial/_environment.yml`[^3] to create the VE and install all dependencies. **This will take awhile to run.**
+- The softwares required for this tutorial are listed in the `_environment.yml` file of this repository. Run `conda env create --prefix=~/.conda/methylation --file=methylation-analysis-tutorial/_environment.yml`[^3][^4] to create the VE and install all dependencies. **This will take awhile to run.**
 - Run `conda init; source ~/.bashrc`; the reason this is necessary is beyond scope of this tutorial. Briefly, if you don't run this, then `conda` will tell you to run this before you can run the next command.
 - Run `conda activate ~/.conda/methylation` to enter your new VE.
 - Run `R -e 'IRkernel::installspec(name = "methylation", displayname = "methylation")'`. This will make your environment accessible within GenePattern Notebook.
@@ -70,4 +70,4 @@ https://discourse.jupyter.org/t/how-can-i-prevent-an-out-of-memory-error-in-gith
 [^1]: Footnotes indicate differences between setup on GPN vs. a local machine with Linux, git, conda etc. installed.
 [^2]: We use conda here specifically because it is preinstalled on GPN. If running locally, the `mamba` package manager is faster with equivalent syntax.
 [^3]: The `--prefix` flag is required on GPN because only the user directory is persisted between sessions. If running locally, the `--prefix` flag is not necessary.
-
+[^4]: If installing locally on Apple Silicon you'll need to specify that you want to use packages compiled for Intel architecture: `CONDA_SUBDIR=osx-64 conda env create --file=methylation-analysis-tutorial/_environment.yml`
