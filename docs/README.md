@@ -8,7 +8,7 @@ This project is written in R using Jupyter notebooks. Methylation data is handle
 The full list of dependencies can be found in [`environment.yml`](environment.yml).
 
 ## 1. Installation
-See the [installation guide](docs/install.md) to set up this tutorial on the cloud at genepattern.org or on your local computer. 
+See the [installation guide](install.md) to set up this tutorial on the cloud at genepattern.org or on your local computer. 
 
 ## 2. Upload data
 Bioinformatics frequently requires lots of data. This tutorial will use methylation array data of 400 medulloblastomas. 
