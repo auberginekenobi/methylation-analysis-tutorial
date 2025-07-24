@@ -8,7 +8,7 @@ This project is written in R using Jupyter notebooks. Methylation data is handle
 The full list of dependencies can be found in [`environment.yml`](environment.yml).
 
 ## 1. Installation
-See the [installation guide](docs/install.md) to set up this tutorial on the cloud at genepattern.org or on your local computer. 
+See the [installation guide](install.md) to set up this tutorial on the cloud at genepattern.org or on your local computer. 
 
 ## 2. Upload data
 Bioinformatics frequently requires lots of data. This tutorial will use methylation array data of 400 medulloblastomas. 
@@ -25,15 +25,15 @@ We now have a lot of data and the bioinformatics software tools to analyze it.
 ## 4. Homework
 [日本語訳](docs/hw-jp.md)
 
-In Section 3, we performed the analysis steps to cluster a small set of 400 brain tumors by their methylation profiles. Since the publication of this method in 2018[^1], those authors have assembled a large dataset of tens of thousands of solid tumors. The classifier trained on that dataset is available for research use at [https://app.epignostix.com/]. As an exercise, we will submit methylation data for an unknown tumor sample to this classifier and interpret the resulting report.
+In Section 3, we performed the analysis steps to cluster a small set of 400 brain tumors by their methylation profiles. Since the publication of this method in 2018,[^1] those authors have assembled a large dataset of tens of thousands of solid tumors. The classifier trained on that dataset is available for research use at https://app.epignostix.com/. As an exercise, we will submit methylation data for an unknown tumor sample to this classifier and interpret the resulting report.
 
 ### 4.1 Instructions
-- **Register an account**. Navigate to [https://app.epignostix.com/#/sign-up] and enter your information.
+- **Register an account**. Navigate to https://app.epignostix.com/#/sign-up and enter your information.
 ![screenshot](hw/registration.png)
 - Wait for your account to be approved.
-- **Download the sample data**. Our data comes from GEO, a public repository of gene expression data hosted by the National Institutes of Health (NIH, USA). Datasets and samples are given searchable unique IDs. Our mystery sample is [GSM4719016](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4719016). Download both `.idat` files.
+- **Download the sample data**. Our data comes from GEO, a public repository of gene expression data hosted by the National Institutes of Health (NIH, USA). Datasets and samples are given searchable unique IDs. Our mystery sample is [GSM4719016](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4719016).[^2] Download both `.idat` files.
 ![screenshot](hw/geo-dl.png)
-- The downloaded files are compressed in `.gz` format. Uncompress them into `.idat`.[^2]
+- The downloaded files are compressed in `.gz` format. Uncompress them into `.idat`.[^3]
 - **Upload your sample**. In the app.epignostix.com web interface, select "Methylation" > "Upload sample". Enter the sample name, upload both idat files, and select "Heidelberg Epignostix CNS Tumor Classifier v12.8 (v0.4)". Check the box and click "Start analysis".
 ![screenshot](hw/sample-upload.png)
 - **Read the report**. When your sample has finished running, it will appear in the "Methylation" > "Sample list" interface. Select it.
@@ -44,5 +44,6 @@ Click "show" to read the report.
 ### 4.2 Homework questions
 - **4.2.1** What is the classification of this tumor?
 
-[^1]: Capper et al., “DNA methylation-based classification of central nervous system tumors.” Nature 2018. 
-[^2]: (Mac OS): Simply double-click to open and decompression will happen automatically. (Windows): Windows doesn't natively support .gz compression. Open WSL and follow Linux instructions. (Linux): `gunzip GSM4719016_203960330055_R01C01_Grn.idat.gz`.
+[^1]: Capper *et al.*, “DNA methylation-based classification of central nervous system tumors.” Nature 2018. 
+[^2]: Riemondy *et al.*, "Neoplastic and immune single-cell transcriptomics define subgroup-specific intra-tumoral heterogeneity of childhood medulloblastoma." *Neuro Oncol* 2022.
+[^3]: (Mac OS): Simply double-click to open and decompression will happen automatically. (Windows): Windows doesn't natively support .gz compression. Open WSL and follow Linux instructions. (Linux): `gunzip GSM4719016_203960330055_R01C01_Grn.idat.gz`.
