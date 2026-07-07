@@ -5,25 +5,24 @@ This project is written in R using Jupyter notebooks. Methylation data is handle
 - [R](https://www.r-project.org/)
 - [minfi](https://bioconductor.org/packages/devel/bioc/vignettes/minfi/inst/doc/minfi.html)
 - [jupyter lab](https://jupyter.org/try-jupyter/lab/?path=notebooks%2FIntro.ipynb)
+
 The full list of dependencies can be found in [`environment.yml`](environment.yml).
 
 ## 1. Installation
 See the [installation guide](install.md) to set up this tutorial on the cloud at genepattern.org or on your local computer. 
 
 ## 2. Upload data
-Bioinformatics frequently requires lots of data. This tutorial will use methylation array data of 400 medulloblastomas. 
-**GPN** GenePattern Notebooks has an 'Upload' feature to import your own files into your home directory, but to save time we have already uploaded the medulloblastoma dataset to the GP server at https://datasets.genepattern.org/?prefix=data/chapman/. This link is included in the analysis code (see 1.3) so no action is necessary for you at this time.  
-**Local install** Download [MBlandscape_subset_400.RData](https://datasets.genepattern.org/data/chapman/MBlandscape_subset_400.RData) to the `./data/` directory of this repository.
+Bioinformatics frequently requires lots of data. This tutorial will use methylation array data of 400 medulloblastomas.  
+Download [MBlandscape_subset_400.RData]() to the `./data/` directory of this repository.
 
 ## 3. Run the analysis
 We now have a lot of data and the bioinformatics software tools to analyze it. 
-- (local install only) In your CLI, navigate to this repository and run `jupyter lab` to open the notebooks interface. 
+- In your CLI, navigate to this repository and run `jupyter lab` to open the notebooks interface. 
 - Open methylation-analysis-tutorial/methylation.ipynb. This is a *jupyter notebook*.
 - You will need to change the *kernel* to use the `methylation` environment we just installed via conda. Using the menu at the top, select `Kernel` > `Change kernel` > `methylation`.
 - Read and run the code in each cell in descending order using `Shift + Enter`.
 
 ## 4. Homework
-[日本語訳](docs/hw-jp.md)
 
 In Section 3, we performed the analysis steps to cluster a small set of 400 brain tumors by their methylation profiles. Since the publication of this method in 2018,[^1] those authors have assembled a large dataset of tens of thousands of solid tumors. The classifier trained on that dataset is available for research use at https://app.epignostix.com/. As an exercise, we will submit methylation data for an unknown tumor sample to this classifier and interpret the resulting report.
 
@@ -41,7 +40,7 @@ In Section 3, we performed the analysis steps to cluster a small set of 400 brai
 Click "show" to read the report.
 ![screenshot](hw/report.png)
 
-### 4.2 Homework questions
+### 4.2 Homework quiz
 - **4.2.1** What is the classification of this tumor?
 
 [^1]: Capper *et al.*, “DNA methylation-based classification of central nervous system tumors.” Nature 2018. 

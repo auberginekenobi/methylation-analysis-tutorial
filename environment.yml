@@ -1,4 +1,4 @@
-name: methylation-analysis-tutorial
+name: methylation
 channels:
   - conda-forge
   - bioconda
