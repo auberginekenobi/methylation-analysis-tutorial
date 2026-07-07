@@ -1,5 +1,7 @@
 # Brain tumor classification using methylation data
 
+English | [日本語](README.jp.md)
+
 ## 0. Dependencies
 This project is written in R using Jupyter notebooks. Methylation data is handled using the *minfi* package.
 - [R](https://www.r-project.org/)
