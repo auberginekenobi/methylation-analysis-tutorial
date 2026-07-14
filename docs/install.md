@@ -15,11 +15,11 @@ Most bioinformatics analyses use existing software written and distributed by so
 - **Download the code.** Git is a software for maintaining and distributing other software. Run the command `git clone https://github.com/auberginekenobi/methylation-analysis-tutorial.git` on the CLI to download the code for this tutorial.[^2]
 - **Set up your environment.** A *virtual environment* (VE) is an isolated set of software tools for running a particular task. We will create a virtual environment for all of the software required for methylation analysis using `conda`.
 - The softwares required for this tutorial are listed in the `environment.yml` file of this repository. Run `conda env create --file=methylation-analysis-tutorial/environment.yml`[^4] to create the VE and install all dependencies. **This will take awhile to run.**
-- Run `conda activate ~/.conda/methylation` to enter your new VE.
-- Run `R -e 'IRkernel::installspec(name = "methylation", displayname = "methylation")'`. This will make your environment accessible within GenePattern Notebook.
+- Run `conda activate methylation-tutorial` to enter your new VE.
+- Run `Rscript -e 'IRkernel::installspec(name = "methylation-tutorial", displayname = "methylation-tutorial")'`. This will make your environment accessible to `jupyter`.
 
 
 [^1]: Previous versions of this tutorial were available on GenePattern; however, the GenePattern project was retired in June 2026 and is no longer available.
 [^2]: `git` is recommended but not required for this tutorial. If you choose not to use git, instead download the code for this project [here](https://github.com/auberginekenobi/methylation-analysis-tutorial/archive/refs/heads/main.zip).
 [^3]: Detailed instructions for installing conda can be found in steps 1-5 [here](https://github.com/auberginekenobi/protocols/tree/main/0_Setting_up_your_workstation).
-[^4]: If installing locally on Apple Silicon you'll need to specify that you want to use packages compiled for Intel architecture: `CONDA_SUBDIR=osx-64 conda env create --file=methylation-analysis-tutorial/_environment.yml`
+[^4]: If installing locally on Apple Silicon you'll need to specify that you want to use packages compiled for Intel architecture: `CONDA_SUBDIR=osx-64 conda env create --file=methylation-analysis-tutorial/environment.yml`
