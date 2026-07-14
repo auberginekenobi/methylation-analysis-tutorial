@@ -13,7 +13,7 @@ This project is written in R using Jupyter notebooks. Methylation data is handle
 The full list of dependencies can be found in [`environment.yml`](environment.yml).
 
 ## 1. Installation
-See the [installation guide](install.md) to set up this tutorial on the cloud at genepattern.org or on your local computer. 
+See the [installation guide](install.md) to set up this tutorial on your local computer. 
 
 ## 2. Upload data
 Bioinformatics frequently requires lots of data. This tutorial will use methylation array data of 400 medulloblastomas.  
@@ -37,7 +37,7 @@ In Section 3, we performed the analysis steps to cluster a small set of 400 brai
 - **Download the sample data**. Our data comes from GEO, a public repository of gene expression data hosted by the National Institutes of Health (NIH, USA). Datasets and samples are given searchable unique IDs. Our mystery sample is [GSM4719016](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4719016).[^2] Download both `.idat` files.
 ![screenshot](hw/geo-dl.png)
 - The downloaded files are compressed in `.gz` format. Uncompress them into `.idat`.[^3]
-- **Upload your sample**. In the app.epignostix.com web interface, select "Methylation" > "Upload sample". Enter the sample name, upload both idat files, and select "Heidelberg Epignostix CNS Tumor Classifier v12.8 (v0.4)". Check the box and click "Start analysis".
+- **Upload your sample**. In the app.epignostix.com web interface, select "Methylation" > "Upload sample". Enter the sample name, upload both idat files, and select "Heidelberg Epignostix CNS Tumor Classifier v12.8 (v1.0)". Check the box and click "Start analysis".
 ![screenshot](hw/sample-upload.png)
 - **Read the report**. When your sample has finished running, it will appear in the "Methylation" > "Sample list" interface. Select it.
 ![screenshot](hw/sample-list.png)

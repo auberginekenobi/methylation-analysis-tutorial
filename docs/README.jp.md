@@ -15,7 +15,7 @@
 依存パッケージの完全な一覧は [`environment.yml`](environment.yml) にあります。
 
 ## 1. インストール
-このチュートリアルを genepattern.org のクラウド上、またはお使いのローカルコンピュータ上でセットアップするには、[インストールガイド](install.md) を参照してください。
+このチュートリアルをお使いのパソコン上でセットアップするには、[インストールガイド](install.md) を参照してください。
 
 ## 2. データのアップロード
 バイオインフォマティクスでは、しばしば大量のデータが必要になります。このチュートリアルでは、400 例の髄芽腫（medulloblastoma）のメチル化アレイデータを使用します。  
@@ -39,7 +39,7 @@
 [GSM4719016_203960330055_R01C01_Red.idat](https://www.dropbox.com/scl/fi/urf4zs2giqkolulvb7djn/GSM4719016_203960330055_R01C01_Red.idat?rlkey=c63f2jg1j8nkfwo6y3fip0jhr&st=1ey4rl1c&dl=0)  
 [GSM4719016_203960330055_R01C01_Grn.idat](https://www.dropbox.com/scl/fi/s1ldcy1gudskz40f90b76/GSM4719016_203960330055_R01C01_Grn.idat?rlkey=qb6hxtb1l8q9g5isofw2i4utn&st=jm8pizpc&dl=0)  
 [^2]
-- **サンプルをアップロードする。** `app.epignostix.com` の web ページの左側で、`"Methylation"（メチル化）` > `"Upload sample"（サンプルをアップロード）` を選択します。サンプル名を入力し、idat ファイルを2つアップロードします。`"Heidelberg Epignostix CNS Tumor Classifier v12.8 (v0.4)"（ハイデルベルク CNS 腫瘍分類器）` を選択します。チェックボックスにチェックを入れ、`"Start analysis"（解析を開始）` をクリックします。
+- **サンプルをアップロードする。** `app.epignostix.com` の web ページの左側で、`"Methylation"（メチル化）` > `"Upload sample"（サンプルをアップロード）` を選択します。サンプル名を入力し、idat ファイルを2つアップロードします。`"Heidelberg Epignostix CNS Tumor Classifier v12.8 (v1.0)"（ハイデルベルク CNS 腫瘍分類器）` を選択します。チェックボックスにチェックを入れ、`"Start analysis"（解析を開始）` をクリックします。
 ![screenshot](hw/sample-upload.png)
 - **レポートを読む。** サンプルの解析が完了すると、`"Methylation"（メチル化）` > `"Sample list"（サンプル一覧）` の画面に表示されます。該当のサンプル名を選択します。
 ![screenshot](hw/sample-list.png)
