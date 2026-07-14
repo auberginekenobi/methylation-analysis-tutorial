@@ -1,11 +1,16 @@
 # 1. Installation
 
+English | [日本語](install.jp.md)
+
+Updated 2026-07-14
+
 This tutorial uses the `jupyter` interface for computational analyses and the `conda` package manager to install required software. You can read more about setting up your workstation for bioinformatics [here](https://github.com/auberginekenobi/protocols/tree/main/0_Setting_up_your_workstation). Follow the instructions below to install on your computer.
 
 ## 1.1.1. Local install (Linux & Mac OS)[^1]
 - (Optional) follow instructions to install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).[^2]
 - Follow instructions to install the [miniforge distribution of conda](https://github.com/conda-forge/miniforge). Proceed through installation prompts, and accept the prompt to update your shell profile to automatially initialize conda.[^3] 
 - Install jupyter: `conda install -n base jupyterlab`.
+
 ## 1.1.2. Local install (Windows)
 Many bioinformatics softwares are not compiled for Windows. To solve this issue, Microsoft maintains the [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) project. Install WSL, then follow the Linux instructions above.
 
