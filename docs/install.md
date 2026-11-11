@@ -22,7 +22,22 @@ Most bioinformatics analyses use existing software written and distributed by so
 - The softwares required for this tutorial are listed in the `environment.yml` file of this repository. Run `conda env create --file=methylation-analysis-tutorial/environment.yml`[^4] to create the VE and install all dependencies. **This will take awhile to run.**
 - Run `conda activate methylation-tutorial` to enter your new VE.
 - Run `Rscript -e 'IRkernel::installspec(name = "methylation-tutorial", displayname = "methylation-tutorial")'`. This will make your environment accessible to `jupyter`.
+- Run `conda deactivate` to exit your VE.
 
+# Uninstallation
+If you're in your VE, run `conda deactivate` to return to your `base` environment. You should now see a `(base)` prefix in your shell prompt.
+
+To uninstall just the `methylation-tutorial` environment, run
+```
+conda env remove --name methylation-tutorial
+```
+
+To uninstall conda entirely, run, in order:
+```
+conda init --reverse --all
+rm -rf ~/miniforge3
+rm -rf ~/.condarc ~/.conda ~/.continuum ~/.mamba
+```
 
 [^1]: Previous versions of this tutorial were available on GenePattern; however, the GenePattern project was retired in June 2026 and is no longer available.
 [^2]: `git` is recommended but not required for this tutorial. If you choose not to use git, instead download the code for this project [here](https://github.com/auberginekenobi/methylation-analysis-tutorial/archive/refs/heads/main.zip).
