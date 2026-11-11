@@ -4,7 +4,7 @@
 
 > この文書は AI（Claude Sonnet 5）によって翻訳されました。誤りや不自然な表現が含まれている可能性があります。
 
-更新日 2026-07-14
+更新日 2026-11-11
 
 このチュートリアルでは、計算解析に `jupyter` インターフェースを、必要なソフトウェアのインストールに `conda` パッケージマネージャーを使用します。バイオインフォマティクス用のワークステーション設定については[こちら](https://github.com/auberginekenobi/protocols/tree/main/0_Setting_up_your_workstation)を参照してください。以下の手順に従って、お使いのコンピュータにインストールしてください。
 
@@ -24,7 +24,22 @@
 - 本チュートリアルに必要なソフトウェアは、このリポジトリの `environment.yml` ファイルに記載されています。`conda env create --file=methylation-analysis-tutorial/environment.yml`[^4] を実行して VE を作成し、すべての依存パッケージをインストールしてください。**この処理には時間がかかります。**
 - `conda activate methylation-tutorial` を実行して、新しく作成した VE に入ります。
 - `Rscript -e 'IRkernel::installspec(name = "methylation-tutorial", displayname = "methylation-tutorial")'` を実行します。これにより、この環境が `jupyter` から利用できるようになります。
+- `conda deactivate` を実行して、VE を終了します。
 
+# アンインストール
+VE に入っている場合は、`conda deactivate` を実行して `base` 環境に戻ります。シェルのプロンプトに `(base)` という接頭辞が表示されるはずです。
+
+`methylation-tutorial` 環境だけをアンインストールするには、次を実行します。
+```
+conda env remove --name methylation-tutorial
+```
+
+conda を完全にアンインストールするには、次を順番に実行します。
+```
+conda init --reverse --all
+rm -rf ~/miniforge3
+rm -rf ~/.condarc ~/.conda ~/.continuum ~/.mamba
+```
 
 [^1]: 本チュートリアルの以前のバージョンは GenePattern 上で提供されていましたが、GenePattern プロジェクトは 2026 年 6 月に終了し、現在は利用できません。
 [^2]: `git` の使用は推奨されますが、本チュートリアルの実施に必須ではありません。git を使用しない場合は、代わりに[こちら](https://github.com/auberginekenobi/methylation-analysis-tutorial/archive/refs/heads/main.zip)から本プロジェクトのコードをダウンロードしてください。

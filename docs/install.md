@@ -2,7 +2,7 @@
 
 English | [日本語](install.jp.md)
 
-Updated 2026-07-14
+Updated 2026-11-11
 
 This tutorial uses the `jupyter` interface for computational analyses and the `conda` package manager to install required software. You can read more about setting up your workstation for bioinformatics [here](https://github.com/auberginekenobi/protocols/tree/main/0_Setting_up_your_workstation). Follow the instructions below to install on your computer.
 
